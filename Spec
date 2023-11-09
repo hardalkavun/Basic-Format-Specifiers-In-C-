@@ -1,0 +1,37 @@
+/**
+ * Bu kod BMT103 dersi uyglumasında
+ * 23181616042 Nolu 
+ * Eren Kaptan Tarafından yazılmıştır.
+ * **/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   printf("Ben A1 şubesinden Eren Kaptan \n");
+   // Burada 65 değerinin desimal karşılğı yazılcak.
+   printf("Çıktı: %d\n", 65);
+   // Burada 65 değerinin sekizlik(octal) sistemde değeri yazılacak ---> 101.
+   printf("Çıktı: %o\n", 65);
+   // Burada 0101 değerinin karşılığı desimal sistemde yazılacak ---> (1*8^2)+(0*8^1)+(1*8^0)=65
+   printf("Çıktı: %d\n", 0101);
+   // Burada 65 değerinin on altılık(hexadecimal) sistemde karşılığı yazılacak ---> 41.
+   printf("Çıktı: %X\n", 65);
+   // Burada hexadecimal tabandaki 0X41 değerinin decimal sistemde karşılığı yazılır. ---> (4*16^1)+(1*16^0)=65
+   printf("Çıktı: %d\n", 0X41);
+   // Burada %u unsigned operatörüdür ve işaretsiz sayılar için kullanılmalıdır -65 değeri işaretli(signed) bir değer olduğundan dolayı istenilen çıktı alınamaz.
+   printf("Çıktı: %u\n",-65);
+   // Burada 65.5 değeri olduğu gibi yazılır ondalıklı sayı operatörü doğru kullanılmıştır ---> 65.500000
+   printf("Çıktı: %f\n",65.5);
+   // Burada 65.5 değerini bilimsel gösterim şeklinde yazar ---> 6.550000e+001 (6.55*10^1) [e+001=10^1 demektir.]
+   printf("Çıktı: %e\n", 65.5);
+   // Buradaki %g format belirleyicisi sayının büyüklüğüne ve hassasiyetine göre kendi görevini ayarlayabilir. Çıktı ---> 65.5 olur
+   printf("Çıktı: %g\n", 65.5);
+   // Burada %c format belirleyicisi ASCII değerlerine göre 65 sayısına denk gelen karakteri yazdırır. Çıktı ---> A
+   printf("Çıktı: %c\n", 65);
+   // Burada A karakterinin tırnak içinde olması ASCII değerlerine bakılması anlamına gelir. A değerine karşılık gelen sayıyı yazdırır. %d format belirleyicisinin kullanılma sebebi ise çıktının tam sayı olacağındandır. Çıktı ---> 65
+   printf("Çıktı: %d\n", 'A');
+
+    return 0;
+}
